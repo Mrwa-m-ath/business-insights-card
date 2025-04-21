@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Business Insights</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: rgb(34, 17, 51);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .Div {
+      display: flex;
+      width: 90%;
+      max-width: 1000px;
+      background-color: rgb(29, 14, 32);
+      border-radius: 10px;
+      overflow: hidden;
+      color: white;
+    }
+
+    .Div0 {
+      width: 50%;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .Div0 h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .Div0 p {
+      color: #c4baba;
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+
+    .Fettor {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .Hay {
+      margin: 10px;
+      line-height: 1.2;
+    }
+
+    .Hay h3 {
+      font-size: 22px;
+      margin: 0;
+    }
+
+    .Hay span {
+      font-size: 14px;
+      color: beige;
+    }
+
+    .Div01 {
+      width: 50%;
+      position: relative;
+      background-image: url('images/image-header-mobile.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .Div01::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(100, 49, 129, 0.6);
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .Div {
+        flex-direction: column;
+      }
+
+      .Div0,
+      .Div01 {
+        width: 100%;
+      }
+
+      .Div0 {
+        order: 2;
+        padding: 30px;
+        text-align: center;
+      }
+
+      .Fettor {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .Div01 {
+        height: 300px;
+        order: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="Div">
+    <div class="Div0">
+      <h1>Get <span style="color: blueviolet;">insights</span> that help your business grow.</h1>
+      <p>
+        Discover the benefits of data analytics and make better decisions
+        regarding revenue, customer experience, and overall efficiency.
+      </p>
+      <div class="Fettor">
+        <div class="Hay">
+          <h3>10k+</h3>
+          <span>companies</span>
+        </div>
+        <div class="Hay">
+          <h3>314</h3>
+          <span>templates</span>
+        </div>
+        <div class="Hay">
+          <h3>12m+</h3>
+          <span>queries</span>
+        </div>
+      </div>
+    </div>
+    <div class="Div01"></div>
+  </div>
+</body>
+</html>
